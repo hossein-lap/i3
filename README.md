@@ -1,5 +1,7 @@
 # i3
-my own i3 configuration
+
+this is my i3 configuration file
+witch I am using
 
 I did not created it, I am just using it
 
