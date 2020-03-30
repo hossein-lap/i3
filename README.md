@@ -1,8 +1,7 @@
 # i3
+# my i3 configuration file
 
-this is my i3 configuration file
-which I am using
-
-I did not created it, I am just using it
+this will be upgraded as long as I do
+I did not created any of these, I am just using them
 
 with best lucks ;)
