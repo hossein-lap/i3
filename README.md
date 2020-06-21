@@ -1,7 +1,18 @@
-# i3
-# my i3 configuration file
+# 
+## my i3 configuration file
 
-this will be upgraded as long as I do
-I did not created any of these, I am just using them
+# it's my main i3 configuration with i3bar & i3status
+# the default font is ubuntuMono, there is two terminals: 
+$mod+return  urxvt
+$mod+t  xterm
 
-with best lucks ;)
+
+# if you want to use all my bindkeys
+# you need to install these
+ ranger
+ alsamixer
+ htop
+ cmus
+ firefox
+
+# if these were any issue, let me know : hosteam01@gmail.com
