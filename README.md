@@ -3,8 +3,8 @@
 
 <h4>it's my main i3 configuration with i3bar & i3status </br>
 the default font is ubuntuMono patched by NerdFonts.com , there is two terminals: </br></h4>
-<h6 mono>$mod+return  urxvt </br>
-$mod+t  xterm </br> </h6>
+<h6><b>urxvt</b> as the default</br>
+and <b>xterm</b> by <b>mod+t</b> </br> </h6>
 <h4>if you want to use all my bindkeys </br>
 you need to install these:</h4>
 <p> ranger </br>
