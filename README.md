@@ -4,14 +4,14 @@
 </h1>
 <h4>
  it's my main i3 configuration with i3bar, i3status and i3blocks</br>
- the default font is ubuntuMono patched by NerdFonts.com , there is two terminals: </br>
+ the default font is ubuntuMono patched by <b>NerdFonts.com</b> , there is two terminals: </br>
 </h4>
-<h6>
+<p>
  <b>urxvt</b> as the default</br>
  and <b>xterm</b> by <b>mod+t</b> </br>
-</h6> 
+</p> 
 <p>
- on <i><u> config-curr </u></i>, termite is the default terminal </br> and xfce4-terminal is the second one
+ on <i>config-curr</i>, termite is the default terminal </br> and xfce4-terminal is the second one
 </p>
 <h4>
  if you want to use all my bindkeys </br>
@@ -34,9 +34,9 @@ you need to install these:
  some changes on <i> config-curr </i>:  
 </h3>
 <p>
- <b> gimp, firefox, pcmanfm, mpv, qtcreator </b> and <b> persepolis </b> assigned for special workspaces </br> 
- <b> xfce4-terminal </b> and <b> lxterminal </b> are in floating mode by default </br>
- <b> i3exit </b> shortcut is <b> Ctrl+Mod+equal </b> </br>
+ <b>gimp, firefox, pcmanfm, mpv, qtcreator</b> and <b>persepolis</b> assigned for special workspaces </br> 
+ <b>xfce4-terminal</b> and <b>lxterminal</b> are in floating mode by default </br>
+ <b>i3exit</b> shortcut is <b>Ctrl+Mod+equal</b> </br>
  
  
  
