@@ -9,9 +9,8 @@
 <p>
  <b>urxvt</b> as the default</br>
  and <b>xterm</b> by <b>mod+t</b> </br>
-</p> 
-<p>
- on <i>config-curr</i>, termite is the default terminal </br> and xfce4-terminal is the second one
+
+ on <i>config-curr</i>, <b>termite</b> is the default terminal </br> and <b>xfce4-terminal</b> is the second one
 </p>
 <h4>
  if you want to use all my bindkeys </br>
