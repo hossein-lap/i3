@@ -11,7 +11,7 @@
  and <b>xterm</b> by <b>mod+t</b> </br>
 </h6> 
 <p>
- on the second config, termite is the default terminal </br> and xfce4-terminal is the second one
+ on <i><u> config-curr </u></i>, termite is the default terminal </br> and xfce4-terminal is the second one
 </p>
 <h4>
  if you want to use all my bindkeys </br>
@@ -31,7 +31,7 @@ you need to install these:
  pavucontrol </br>
 </p>
 <h3>
- some changes on second configs:  
+ some changes on <i> config-curr </i>:  
 </h3>
 <p>
  <b> gimp, firefox, pcmanfm, mpv, qtcreator </b> and <b> persepolis </b> assigned for special workspaces </br> 
