@@ -474,7 +474,7 @@ mode "$mode_gaps_outer" {
 }
 
 
-exec feh --bg-fill /workspace/picture/wallpaper/bITyvV.jpg
+exec feh --bg-fill /workspace/picture/wallpaper/wallhaven-294634.jpg
 
 # keyboard layout En and Per
 
