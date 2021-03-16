@@ -72,20 +72,20 @@ bindsym $mod+Ctrl+t exec pkill Telegram
 
 ## Start Applications
 
-bindsym $mod+F1 exec $aterm -e 'top'
-bindsym $mod+F2 exec $aterm -e 'nload'
-bindsym $mod+F3 exec $aterm -e 'alsamixer'
-bindsym $mod+F4 exec $aterm -e 'glances'
+#bindsym $mod+F1 exec $aterm -e 'top'
+#bindsym $mod+F2 exec $aterm -e 'nload'
+#bindsym $mod+F3 exec $aterm -e 'alsamixer'
+#bindsym $mod+F4 exec $aterm -e 'glances'
 
-bindsym $mod+F5 exec $aterm -e 'ranger'
-bindsym $mod+F6 exec $aterm -e 'cmus' || 'cmatrix'
-bindsym $mod+F7 exec $aterm -e 'nudoku'
-bindsym $mod+F8 exec $aterm -e 'nsnake'
+#bindsym $mod+F5 exec $aterm -e 'ranger'
+#bindsym $mod+F6 exec $aterm -e 'cmus' || 'cmatrix'
+#bindsym $mod+F7 exec $aterm -e 'nudoku'
+#bindsym $mod+F8 exec $aterm -e 'nsnake'
 
-bindsym $mod+F9 exec $aterm -e 'links'
+#bindsym $mod+F9 exec $aterm -e 'links'
 # bindsym $mod+F10 exec $aterm -e ''
 # bindsym $mod+F11 exec $aterm -e ''
-bindsym $mod+F12 exec $aterm
+#bindsym $mod+F12 exec $aterm
 
 
 # 
@@ -184,25 +184,25 @@ bindsym $mod+Ctrl+Left workspace prev
 #et $ws8 
 #et $ws9 9
 #
-# set $ws1 1
-# set $ws2 2
-# set $ws3 3
-# set $ws4 4
-# set $ws5 5
-# set $ws6 6
-# set $ws7 7
-# set $ws8 8
-# set $ws9 9
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
 #
-set $ws1 (1)
-set $ws2 (2)
-set $ws3 (3)
-set $ws4 (4)
-set $ws5 (5)
-set $ws6 (6)
-set $ws7 (7)
-set $ws8 (8)
-set $ws9 (9)
+#set $ws1 (1)
+#set $ws2 (2)
+#set $ws3 (3)
+#set $ws4 (4)
+#set $ws5 (5)
+#set $ws6 (6)
+#set $ws7 (7)
+#set $ws8 (8)
+#set $ws9 (9)
 #
 # terminal
 # code
@@ -398,9 +398,9 @@ bindsym $mod+Ctrl+l exec --no-startup-id blurlock
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
     i3bar_command i3bar
-#   status_command i3blocks
+    status_command i3blocks
 #   status_command xmobar
-#   position top
+    position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -545,4 +545,4 @@ mode "$mode_gaps_outer" {
   exec --no-startup-id picom            # compasitor for transparentcy
 # exec caffeine
   exec setxkbmap -layout us,ir -option 'grp:lwin_toggle'
-  exec $HOME/.config/polybar/launch.sh
+# exec $HOME/.config/polybar/launch.sh
