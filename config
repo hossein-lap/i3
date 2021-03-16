@@ -21,7 +21,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:UbuntuMono Nerd Font 12.0
+font pango:DejaVuSansMono Nerd Font Book 10.0
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -29,13 +29,13 @@ floating_modifier $mod
 # set apps
 
 set $term termite 
-set $aterm st
+set $aterm lxterminal
 set $fileman pcmanfm
 set $browser firefox
 
 # start a terminal
 bindsym $mod+Return exec $term
-bindsym $mod+t exec kitty
+bindsym $mod+t exec mate-terminal
 
 bindsym $mod+shift+Return exec $term -e 'sudo -i'
 
@@ -46,7 +46,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run -fn 'ubuntu'
 
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+# bindsym $mod+z exec --no-startup-id morc_menu
 
 # start Telegram at startup 
 # exec ~/program/Telegram/Telegram
@@ -60,15 +60,15 @@ bindsym $mod+Ctrl+t exec pkill Telegram
 
 # exec --no-startup-id volumeicon
 # bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-    exec pulseaudio
+    exec --no-startup-id pulseaudio
 #   exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+  bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+  bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 ## Start Applications
 
@@ -77,8 +77,8 @@ bindsym $mod+F2 exec $aterm -e 'nload'
 bindsym $mod+F3 exec $aterm -e 'alsamixer'
 bindsym $mod+F4 exec $aterm -e 'glances'
 
-bindsym $mod+F5 exec $aterm -e ranger
-bindsym $mod+F6 exec $aterm -e "cmus" || "cmatrix"
+bindsym $mod+F5 exec $aterm -e 'ranger'
+bindsym $mod+F6 exec $aterm -e 'cmus' || 'cmatrix'
 bindsym $mod+F7 exec $aterm -e 'nudoku'
 bindsym $mod+F8 exec $aterm -e 'nsnake'
 
@@ -174,26 +174,36 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 ﬋    
-#et $ws1  
-#et $ws2  
-#et $ws3  
-#et $ws4 4
-#et $ws5  
-#et $ws6  
-#et $ws7  
-#et $ws8  
+#et $ws1 
+#et $ws2 
+#et $ws3 
+#et $ws4 
+#et $ws5 
+#et $ws6 
+#et $ws7 
+#et $ws8 
 #et $ws9 9
-
-set $ws1 1
-set $ws2 2
-set $ws3 3
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
-set $ws9 9
-
+#
+# set $ws1 1
+# set $ws2 2
+# set $ws3 3
+# set $ws4 4
+# set $ws5 5
+# set $ws6 6
+# set $ws7 7
+# set $ws8 8
+# set $ws9 9
+#
+set $ws1 (1)
+set $ws2 (2)
+set $ws3 (3)
+set $ws4 (4)
+set $ws5 (5)
+set $ws6 (6)
+set $ws7 (7)
+set $ws8 (8)
+set $ws9 (9)
+#
 # terminal
 # code
 # web
@@ -242,12 +252,12 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
     assign [class="Pcmanfm"] $ws5
 #   assign [class="thunar"] $ws5
     assign [class="persepolis"] $ws4
-    assign [class="mpv"] $ws8
+#   assign [class="mpv"] $ws8
 #   assign [class="vlc"] $ws8
-    assign [class="Telegram"] $ws7
+    assign [class="Telegram"] $ws4
 #   assign [class="Thunderbird"] $ws1
 #   assign [class="Pale moon"] $ws3
-#   assign [class=""] $ws
+    assign [class="(?i)virtualbox"] $ws8
 #   assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
@@ -259,8 +269,9 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
     for_window [class="Galculator"] floating enable border pixel 1
     for_window [class="GParted"] floating enable border normal
     for_window [title="feh"] floating enable border normal
+    for_window [title="vokoscreen"] floating enable border normal
 #   for_window [class="Lightdm-settings"] floating enable
-#   for_window [class="Lxappearance"] floating enable enable border normal
+    for_window [class="Lxappearance"] floating enable enable border normal
 #   for_window [class="Manjaro-hello"] floating enable
 #   for_window [class="Manjaro Settings Manager"] floating enable border normal
 #   for_window [title="MuseScore: Play Panel"] floating enable
@@ -276,7 +287,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 #   for_window [class="(?i)System-config-printer.py"] floating enable border normal
 #   for_window [class="Skype"] floating enable border normal
 #   for_window [class="st"] floating enable border pixel 2 
-    for_window [class="(?i)virtualbox"] floating enable border pixel 2 
+    for_window [class="(?i)virtualbox"] border normal
     for_window [class="Xfburn"] floating enable
     for_window [class="Telegram"] floating enable border pixel 2
     for_window [class="persepolis"] floating enable border normal 
@@ -349,7 +360,7 @@ bindsym $mod+Ctrl+l exec --no-startup-id blurlock
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_gray
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 35 -locker blurlock
+# exec --no-startup-id xautolock -time 35 -locker blurlock
 # exec_always --no-startup-id ff-theme-util
 # exec_always --no-startup-id fix_xcursor
 
@@ -386,18 +397,19 @@ exec --no-startup-id xautolock -time 35 -locker blurlock
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-    status_command i3blocks
-	position top
+    i3bar_command i3bar
+#   status_command i3blocks
+#   status_command xmobar
+#   position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
+# 	bindsym button4 nop
+# 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+# 	strip_workspace_numbers yes
 
     colors {
         background #000001
@@ -443,13 +455,20 @@ bindsym $mod+m bar mode toggle
 
 ## red : 
   client.focused          #ff4400 #ee0000 #01000C #115599
-  client.focused_inactive #003330 #006660 #330000 #454948
-  client.unfocused        #777777 #56555F #ffffff #454948
+  client.focused_inactive #000020 #000020 #FF6800 #454948
+  client.unfocused        #01000C #01000C #aa3400 #454948
   client.urgent           #009900 #009900 #000000 #268BD2
   client.placeholder      #0c0c0c #0c0c0c #ffffff #000000 
-                           
-## greay : 
-#  client.focused          #595B5B #595B5B #353836 #FDF6E3
+#                           
+## orange : 
+# client.focused          #ff4400 #ff6500 #01000C #115599
+# client.focused_inactive #000020 #000020 #FF1100 #454948
+# client.unfocused        #01000C #01000C #681200 #454948
+# client.urgent           #009900 #009900 #000000 #268BD2
+# client.placeholder      #0c0c0c #0c0c0c #ffffff #000000 
+#
+## orange: 
+#  client.focused          #ff6800 #ff6500 #111111 #FDF6E3
 #  client.focused_inactive #000020 #000020 #FF1100 #454948
 #  client.unfocused        #01000C #01000C #8D0728 #454948
 #  client.urgent           #009900 #009900 #000000 #268BD2
@@ -519,12 +538,11 @@ mode "$mode_gaps_outer" {
 #
   exec ~/.fehbg 
 # exec ~/.mouse.pad
-
 #
 ##
-
 # 
-
-  exec xcompmgr 
+# exec xcompmgr                         # minimal compasitor for transparentcy
+  exec --no-startup-id picom            # compasitor for transparentcy
 # exec caffeine
   exec setxkbmap -layout us,ir -option 'grp:lwin_toggle'
+  exec $HOME/.config/polybar/launch.sh
