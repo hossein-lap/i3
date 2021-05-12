@@ -28,7 +28,7 @@ you may want to install these:
  <b>gimp, firefox, pcmanfm, mpv, qtcreator, virtualbox</b> and <b>persepolis</b> assigned to special workspaces </br> 
  <b>feh</b> and <b>xterm</b> are in floating mode by default </br>
  <b>i3exit</b> shortcut is <b>Ctrl+Mod1+0</b> </br>
- <b>Mod1+d</b> also for <b>dmenu_bind.sh</b> scriptm which is a script for run dmenu with my font and colors
+ <b>Mod1+d</b> also for <b>dmenu_bind.sh</b> script, which is a script to run dmenu with my font and colors
  
 </p>
 <h4>
