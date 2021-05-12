@@ -2,10 +2,12 @@
 <h1>
  my i3 configuration file
 </h1>
-<h4>
- it's my main i3 configuration with i3-gaps, i3bar, and i3blocks</br>
- the default font is ubuntuMono patched by <b>NerdFonts.com</b> , there is two terminals: </br>
-</h4>
+<p>
+it's my main i3 configuration with i3-gaps, i3bar, and i3blocks</br>
+<b>default theme is b/w </b></br> 
+ but two more colors exists which are usable [red and orange] </br>
+the default font is Dejavue Sans Mono, there is two terminals keybinding: </br>
+<p>
 <p>
  <b>alacritty</b> as the default terminal [Mod1+Return] </br>
  and <b>xterm</b> by [Mod1+t] </br>
@@ -20,7 +22,7 @@ you may want to install these:
  cmus </br>
  firefox </br>
  pcmanfm </br>
- i3exit[aur] </br>
+ i3exit [aur] </br>
 
 </p>
 
