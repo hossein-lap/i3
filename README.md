@@ -6,7 +6,7 @@
 it's my main i3 configuration with i3-gaps, i3bar, and i3blocks</br>
 <b>default theme is b/w </b></br> 
  but two more colors exists which are usable [red and orange] </br>
-the default font is Dejavue Sans Mono, there is two terminals keybinding: </br>
+the default font is Dejavu Sans Mono, there is two terminals keybinding: </br>
 <p>
 <p>
  <b>alacritty</b> as the default terminal [Mod1+Return] </br>
